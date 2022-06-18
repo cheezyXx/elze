@@ -1,17 +1,17 @@
-<form>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
   <h1>Elze app - Login</h1>
 
   <mat-form-field appearance="standard">
     <mat-label>Email</mat-label>
-    <input matInput>
+    <input matInput type="email" formControlName="email">
   </mat-form-field>
 
   <mat-form-field appearance="standard">
     <mat-label>Password</mat-label>
-    <input matInput>
+    <input matInput type="password" formControlName="password">
   </mat-form-field>
 
-  <button mat-raised-button color="primary" (click)="onSubmit()">Login</button>
+  <button mat-raised-button color="primary" [disabled]="form.invalid">Login</button>
 
   <div class="password">
     <a mat-button [routerLink]="['/register']">Don't have an account?</a>
