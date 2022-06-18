@@ -12,6 +12,8 @@ import { ClientsModule } from './modules/clients/clients.module';
 import { AlertComponent } from './components/alert/alert.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AuthLayoutComponent } from './components/auth-layout/auth-layout.component';
+import { ProtectedRouteGuard } from './guards/protected-route.guard';
+import { NormalRouteGuard } from './guards/normal-route.guard';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,13 @@ import { AuthLayoutComponent } from './components/auth-layout/auth-layout.compon
   ],
   imports: [
     AuthModule,
-    DashboardModule,
     InvoicesModule,
     ClientsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [ProtectedRouteGuard, NormalRouteGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

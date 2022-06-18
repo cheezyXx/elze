@@ -5,8 +5,8 @@ import { catchError, of, take, throwError } from 'rxjs';
 import { checkPasswords } from '../../../../common/validators';
 import { RegisterService } from '../../services/register.service';
 import { Router } from '@angular/router';
-import { AlertService } from '../../../../components/alert/alert.service';
 
+import { AlertService } from '../../../../components/alert/alert.service';
 
 type FormValues = {
   firstName: string;

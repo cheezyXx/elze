@@ -1,6 +1,12 @@
 {
   "users": [
-
+    {
+      "email": "tomas.svojanovsky11@gmail.com",
+      "password": "$2a$10$lhBfFsymPZeOb1v2wdVmQ.eThyKr9yzYT4yH0M5uwqySJwJ07vZP2",
+      "firstName": "Tomas",
+      "lastName": "Svojanovsky",
+      "id": 1
+    }
   ],
   "clients": [],
   "invoices": []

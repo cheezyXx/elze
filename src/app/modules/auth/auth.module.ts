@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { RegisterService } from './services/register.service';
+import { LoginService } from './services/login.service';
 
 @NgModule({
   declarations: [LoginComponent,RegisterComponent],
@@ -20,7 +21,7 @@ import { RegisterService } from './services/register.service';
     RouterModule,
     HttpClientModule,
   ],
-  providers: [RegisterService],
+  providers: [RegisterService, LoginService],
 })
 export class AuthModule {
 
