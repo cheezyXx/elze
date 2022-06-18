@@ -1,0 +1,8 @@
+<ng-container *ngIf="(alert | async) as alert">
+  <div class="alert" [class]="alert.type" role="alert">
+    {{ alert.message }}
+    <span class="material-symbols-outlined" (click)="onClose()">
+    close
+    </span>
+  </div>
+</ng-container>

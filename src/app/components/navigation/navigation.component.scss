@@ -1,0 +1,26 @@
+.user-top {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  > img {
+    box-shadow: 0 0 10px #eee;
+    max-width: 5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+nav {
+  box-shadow: 5px 0 5px -2px #eee;
+  margin-left: -12px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.active {
+  color: #e06666;
+}

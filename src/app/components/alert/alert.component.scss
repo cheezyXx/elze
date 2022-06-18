@@ -1,0 +1,11 @@
+.alert {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  > span {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
