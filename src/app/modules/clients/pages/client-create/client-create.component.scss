@@ -1,0 +1,10 @@
+.button-group {
+  > * + * {
+    margin-left: 1rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+}

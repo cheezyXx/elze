@@ -1,0 +1,12 @@
+<h1>Clients</h1>
+
+<div class="row">
+  <div class="col-12">
+    <a mat-raised-button color="primary" [routerLink]="['/clients', 'create']">Create client</a>
+  </div>
+
+  <div class="col-12">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    </table>
+  </div>
+</div>
