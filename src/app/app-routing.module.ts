@@ -1,16 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-import { LoginComponent } from './modules/auth/pages/login/login.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { RegisterComponent } from './modules/auth/pages/register/register.component';
-import { AuthLayoutComponent } from './components/auth-layout/auth-layout.component';
-import { DashboardComponent } from './modules/dashboard/pages/dashboard/dashboard.component';
-import { ClientsComponent } from './modules/clients/pages/clients/clients.component';
-import { InvoiceListComponent } from './modules/invoices/pages/invoice-list/invoice-list.component';
-import { ProtectedRouteGuard } from './guards/protected-route.guard';
-import { NormalRouteGuard } from './guards/normal-route.guard';
-import { ClientCreateComponent } from './modules/clients/pages/client-create/client-create.component';
+import { LoginComponent } from "./modules/auth/pages/login/login.component";
+import { LayoutComponent } from "./components/layout/layout.component";
+import { RegisterComponent } from "./modules/auth/pages/register/register.component";
+import { AuthLayoutComponent } from "./components/auth-layout/auth-layout.component";
+import { DashboardComponent } from "./modules/dashboard/pages/dashboard/dashboard.component";
+import { ClientsComponent } from "./modules/clients/pages/clients/clients.component";
+import { InvoiceListComponent } from "./modules/invoices/pages/invoice-list/invoice-list.component";
+import { ProtectedRouteGuard } from "./guards/protected-route.guard";
+import { NormalRouteGuard } from "./guards/normal-route.guard";
+import { ClientCreateComponent } from "./modules/clients/pages/client-create/client-create.component";
 
 export enum ROUTES {
   DASHBOARD = "dashboard",
@@ -23,8 +23,8 @@ export enum ROUTES {
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "dashboard",
-    pathMatch: 'full',
+    redirectTo: "clients",
+    pathMatch: "full",
   },
   {
     path: "",
@@ -33,7 +33,7 @@ const routes: Routes = [
     children: [
       {
         path: "dashboard",
-        loadChildren: () => import('./modules/dashboard/dashboard.module').then(m => m.DashboardModule),
+        loadChildren: () => import("./modules/dashboard/dashboard.module").then((m) => m.DashboardModule),
       },
       {
         path: "clients",
@@ -68,6 +68,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

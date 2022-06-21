@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { deleteToken } from '../../common/token';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { Router } from "@angular/router";
+
+import { deleteToken } from "../../common/token";
 
 type Route = {
   path: string;
@@ -14,8 +15,7 @@ type Route = {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavigationComponent {
-  constructor(private router: Router) {
-  }
+  constructor(private router: Router) {}
 
   routes: Route[] = [
     {
@@ -33,7 +33,7 @@ export class NavigationComponent {
   ];
 
   async onLogout() {
-    deleteToken()
+    deleteToken();
     await this.router.navigate(["/login"]);
   }
 }

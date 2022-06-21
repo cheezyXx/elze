@@ -5,22 +5,21 @@
     <form [formGroup]="form">
       <mat-form-field appearance="standard">
         <mat-label>First name</mat-label>
-        <input matInput type="text" formControlName="firstName">
+        <input matInput type="text" formControlName="firstName" />
       </mat-form-field>
 
       <mat-form-field appearance="standard">
         <mat-label>Last name</mat-label>
-        <input matInput type="text" formControlName="lastName">
+        <input matInput type="text" formControlName="lastName" />
       </mat-form-field>
 
       <mat-form-field appearance="fill">
         <mat-label>Birthday</mat-label>
-        <input matInput [matDatepicker]="picker" formControlName="birthday">
+        <input matInput [matDatepicker]="picker" formControlName="birthday" />
         <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
-
 
       <div class="button-group">
         <button mat-raised-button color="primary" (click)="onSubmit()">Create client</button>

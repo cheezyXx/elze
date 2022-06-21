@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { DashboardRoutingModule } from './dashboard-routing.module';
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+import { DashboardRoutingModule } from "./dashboard-routing.module";
 
 @NgModule({
   imports: [DashboardRoutingModule],
@@ -9,5 +9,4 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   declarations: [DashboardComponent],
   providers: [],
 })
-export class DashboardModule {
-}
+export class DashboardModule {}

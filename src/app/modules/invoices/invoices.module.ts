@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 
-import { InvoiceListComponent } from './pages/invoice-list/invoice-list.component';
+import { InvoiceListComponent } from "./pages/invoice-list/invoice-list.component";
 
 @NgModule({
   imports: [],
@@ -8,5 +8,4 @@ import { InvoiceListComponent } from './pages/invoice-list/invoice-list.componen
   declarations: [InvoiceListComponent],
   providers: [],
 })
-export class InvoicesModule {
-}
+export class InvoicesModule {}
