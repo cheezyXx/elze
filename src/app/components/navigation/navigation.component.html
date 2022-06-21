@@ -2,23 +2,19 @@
   <div class="user-top">
     <img
       class="img-fluid"
-      src="https://imageio.forbes.com/specials-images/imageserve/5e7589f9c7b02d000666c352/0x0.jpg?format=jpg&crop=1963,1964,x665,y62,safe&height=416&width=416&fit=bounds" alt="User photo">
+      src="https://imageio.forbes.com/specials-images/imageserve/5e7589f9c7b02d000666c352/0x0.jpg?format=jpg&crop=1963,1964,x665,y62,safe&height=416&width=416&fit=bounds"
+      alt="User photo"
+    />
 
     Tomas Svojanovsky
   </div>
 
   <ul class="nav flex-column">
     <li *ngFor="let route of routes" class="nav-item">
-      <a
-        class="nav-link"
-        routerLinkActive="active"
-        [routerLink]="route.path">{{route.label}}</a>
+      <a class="nav-link" routerLinkActive="active" [routerLink]="route.path">{{ route.label }}</a>
     </li>
     <li class="nav-item">
-      <a
-        class="nav-link"
-        routerLinkActive="active"
-        (click)="onLogout()">Logout</a>
+      <a class="nav-link" routerLinkActive="active" (click)="onLogout()">Logout</a>
     </li>
   </ul>
 </nav>

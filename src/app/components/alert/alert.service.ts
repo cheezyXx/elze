@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { Subject } from "rxjs";
 
 export type Alert = {
   type: string;
@@ -17,11 +17,11 @@ export class AlertService {
   }
 
   success(message: string) {
-    this.subject.next({ message, type: "alert-danger" });
+    this.subject.next({ message, type: "alert-success" });
   }
 
   danger(message: string) {
-   this.subject.next({ message, type: "alert-success" });
+    this.subject.next({ message, type: "alert-danger" });
   }
 
   clear() {

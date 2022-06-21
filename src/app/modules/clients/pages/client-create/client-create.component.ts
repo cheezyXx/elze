@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { FormBuilder } from '@angular/forms';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { Router } from "@angular/router";
+import { FormBuilder } from "@angular/forms";
 
 @Component({
   selector: "app-client-create",
@@ -15,11 +15,7 @@ export class ClientCreateComponent {
     birthday: [],
   });
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private router: Router,
-  ) {
-  }
+  constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   async onSubmit() {
     await this.router.navigate(["clients"]);

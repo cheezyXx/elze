@@ -6,6 +6,13 @@
       "firstName": "Tomas",
       "lastName": "Svojanovsky",
       "id": 1
+    },
+    {
+      "email": "tomas.svojanovsky22@gmail.com",
+      "password": "$2a$10$Bxv.zDewVK4HJd5QtHQlYOdR1RaLJKMasVSd.uYI1WI9fkrAcK7yG",
+      "firstName": "Tomas ",
+      "lastName": "Svojanovsky",
+      "id": 2
     }
   ],
   "clients": [],
