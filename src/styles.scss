@@ -10,3 +10,13 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+table {
+  width: 100%;
+}
+
+.button-group {
+  > * + * {
+    margin-left: 1rem !important;
+  }
+}
