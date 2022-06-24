@@ -7,6 +7,7 @@ import { RegisterComponent } from "./modules/auth/pages/register/register.compon
 import { AuthLayoutComponent } from "./components/auth-layout/auth-layout.component";
 import { ProtectedRouteGuard } from "./guards/protected-route.guard";
 import { NormalRouteGuard } from "./guards/normal-route.guard";
+import { InvoiceListComponent } from "./modules/invoices/pages/invoice-list/invoice-list.component";
 
 export enum ROUTES {
   DASHBOARD = "dashboard",
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: "clients",
         loadChildren: () => import("./modules/clients/clients.module").then((m) => m.ClientsModule),
+      },
+      {
+        path: "invoices",
+        component: InvoiceListComponent,
       },
     ],
   },
