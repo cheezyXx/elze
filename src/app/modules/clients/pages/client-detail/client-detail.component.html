@@ -1,0 +1,14 @@
+<h1>Clients detail</h1>
+
+<div *ngIf="(client | async) as client">
+  <h2>Jmeno: {{client.firstName}}</h2>
+  <h2>Primeni: {{client.lastName}}</h2>
+  <h2>Datum narozeni: {{client.birthday | date:"d.M.yyyy"}}</h2>
+</div>
+
+<div class="button-group">
+  <button
+    *ngIf="(client | async) as client"
+    mat-raised-button color="warn" (click)="onDelete(client.id)">Delete</button>
+  <a mat-raised-button [routerLink]="['/clients']">Back</a>
+</div>
